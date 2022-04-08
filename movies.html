@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta charset="utf-8" />
+
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="./styles/pages/movies.css" />
+    <link rel="icon" href="./assets/logo.svg" alt="logo" />
+  </head>
+  <body>
+    <div id="root">
+      <header class="headerContainer">
+        <a href="index.html">
+          <picture class="logoContainer">
+            <img src="./assets/logo.svg" alt="logo" />
+
+            <h1 id="nameCreator"></h1>
+          </picture>
+        </a>
+        <nav>
+          <ul class="navList" id="navList">
+            <li class="listItem">
+              <img src="./assets/ant-design_home-filled.svg" alt="iconHome" />
+              <a href="index.html">Home</a>
+            </li>
+            <li class="listItem">
+              <img
+                src="./assets/fluent_movies-and-tv-16-filled.svg"
+                alt="IconMovies"
+              />
+              <a href="./movies.html">Movies</a>
+            </li>
+            <li class="listItem">
+              <img src="./assets/ph_mask-happy-fill.svg" alt="IconMovies" />
+              <a href="characters.html">Characters</a>
+            </li>
+            <li class="listItem">
+              <img src="./assets/akar-icons_github-fill.svg" alt="IconMovies" />
+              <a href="https://github.com/KarinaMel0" target="_blank">GitHub</a>
+            </li>
+            <li class="listItem">
+              <img
+                src="./assets/entypo-social_linkedin-with-circle.svg"
+                alt="IconMovies"
+              />
+              <a
+                href="https://www.linkedin.com/in/karina-mel-611649223/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="mainContainer" id="mainContainer">
+
+
+     <div class="modalContainer">
+       <div class="modal">
+
+          <button class="close">close Modal</button>
+       </div>
+     </div>
+
+
+
+
+
+
+        <div class="inputContainer">
+          <input
+            type="search"
+            class="inputs"
+            id="search"
+            placeholder="Search"
+          />
+
+
+          <select
+            name="inputSelect"
+            id="inputSelect"
+            class="inputs"
+            title="inputSelect"
+          >
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+            <option value="highestScore">Highest score</option>
+            <option value="lowestScore">Lowest score</option>
+            <option value="Newest">Newest</option>
+            <option value="Oldest">Oldest</option>
+          </select>
+
+          <select
+            name="inputSelect"
+            id="directors"
+            class="inputs"
+            title="inputSelect"
+          >
+            <option value="">Director</option>
+
+          </select>
+
+          <select
+          name="inputSelect"
+          id="Producer"
+          class="inputs"
+          title="inputSelect"
+        >
+          <option value="">Producer</option>
+
+        </select>
+
+        </div>
+
+      </main>
+    </div>
+
+
+    <script src="./js/pages/movies.js" type="module"></script>
+  </body>
+</html>

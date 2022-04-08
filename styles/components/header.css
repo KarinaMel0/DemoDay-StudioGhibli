@@ -1,0 +1,133 @@
+@import "../variables.css";
+body {
+  background-image: url(../../assets/Desktop.svg);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.headerContainer {
+  background-color: var(--cor-principal-1);
+  color: var(--cor-principal-2);
+  backface-visibility: hidden;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  color: var(--cor-principal-2);
+  flex-direction: column;
+  height: 100vh;
+  width: 3.8rem;
+  overflow: hidden;
+  transition: width 0.5s;
+  align-items: flex-start;
+}
+.headerContainer a {
+  padding-left: 10%;
+}
+.headerContainer:hover {
+  width: 14rem;
+}
+.headerContainer:hover .navList a {
+  display: flex;
+}
+.headerContainer .logoContainer {
+  height: 10vh;
+  display: flex;
+  flex-direction: center;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.logoContainer img {
+  height: 6vh;
+}
+
+.headerContainer a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.navList {
+  color: var(--cor-principal-2);
+  list-style-type: none;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-right: 20px;
+  z-index: 2;
+  padding-left: 10%;
+  gap: 10px;
+}
+.navList a {
+  display: none;
+}
+
+.listItem {
+  font-size: 4vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  transition: 0.5s;
+}
+.listItem:hover {
+  background: rgba(207, 223, 210, 0.47);
+  width: 11.87rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+.mainContainer {
+  min-height: 75vh;
+}
+a {
+  text-decoration: none;
+  color: var(--cor-principal-2);
+}
+::-webkit-scrollbar {
+  width: 1vw;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-principal-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-principal-1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #022424;
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+  .listItem {
+    font-size: 5vmin;
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+  }
+}

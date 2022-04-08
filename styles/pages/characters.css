@@ -1,0 +1,251 @@
+@import "../reset.css";
+@import "../components/header.css";
+
+.mainContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 70px;
+}
+.cardsContainer{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding-left: 14%;
+  padding-right: 10%;
+  column-gap: 60px;
+}
+.cardsContainer .cards:nth-child(n) {
+  margin: 10px auto;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+ object-fit: cover;
+ object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 1s;
+}
+
+.img:hover{
+transform: scale(1.1);
+  transition: 1s;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  width: 15rem;
+  height: 16rem;
+}
+.nameCharacters{
+  line-height: 1.6rem;
+  font-size: 2rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 6.5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 10%
+}
+.inputs {
+  border: none;
+  border-radius: 10px;
+  height: 2.2rem;
+  padding-left: 15px;
+  width: 15vw;
+  font-size: 1.4rem;
+}
+.line{
+ background: var(--cor-principal-1);
+ width: 60vw;
+ height: 5px;
+ position: relative;
+ top: 20px;
+}
+#calculoCharaters{
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2%;
+  width:60vw;
+  text-align:center;
+}
+
+.modalContainer{
+  background: rgba(6, 105, 94, 0);
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  visibility: hidden;
+  display: flex;
+  transition: 0.5s;
+
+}
+.modal{
+background: #034040;
+text-align: start;
+border-radius: 10px;
+width: 50%;
+height: 100%;
+padding: 30px 60px;
+transform: scale(0);
+transition:  0.5s ease-in-out;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #B8D8C0;
+gap: 10px;
+
+}
+.showModal{
+  visibility: visible;
+  background: rgba(6, 105, 94, 0.69);
+  transition:  2s
+}
+
+.showModal .modal{
+  transform: scale(1);
+  transition:  2s cubic-bezier(0,1.53,0,.99);
+}
+
+.modal .closeModal{
+  width: 7%;
+  position:absolute;
+  right: 10px;
+  top: 0;
+  transform: scale(0.8);
+  transition:  1s
+}
+.modal .closeModal:hover{
+  transform: scale(1);
+  transition:  1s
+}
+
+.modal  h3, .modal p{
+
+  font-size: 1.5rem;
+  text-align: start;
+  align-self: start;
+
+}
+
+
+.modal .poster {
+  height: 30vh;
+  width: 200px;
+  height: 200px;
+ object-fit: cover;
+ object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 1s;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: 1s;
+}
+
+.modal .poster:hover{
+  transform: scale(2) translateY(5rem);
+
+  transition: 1s;
+}
+
+
+@media (max-width: 767px) {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mainContainer {
+    min-height: 82vh;
+    margin-left: 10%;
+  }
+  .inputs {
+    border: none;
+    border-radius: 10px;
+    height: 2.2rem;
+    padding-left: 15px;
+    width: 18vw;
+    font-size: 1.4rem;
+  }
+  .modal{
+    width: 70%;
+   height: 100%;
+   margin-left: 1%;
+  }
+  .modal p{
+
+    font-size: 1.2rem;
+
+
+
+  }
+}
+@media (max-width: 425px) {
+
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .modal{
+    width: 100%;
+   height: 100%;
+   margin-left: 0px;
+   margin-right: 0px;
+   overflow-y: scroll;
+  }
+
+  .modal .closeModal{
+    width: 7%;
+    position:absolute;
+    right: 10%;
+    top: 5px;
+    z-index: 99;
+
+  }
+  .modal p{
+    font-size: 1rem;
+  }
+  .inputContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 100%;
+    margin-left: 13%;
+  }
+  .modal .poster:hover{
+    transform: scale(1.3) translateY(5rem);
+
+    transition: 1s;
+  }
+  .inputs{
+    width: 27vw;
+  }
+}
