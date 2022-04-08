@@ -1,0 +1,66 @@
+@import "../reset.css";
+@import "../components/header.css";
+
+.about{
+    margin: 0 auto;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.developer{
+    padding-top:5%;
+    padding-bottom:5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.titleDeveloper{
+    margin: 0 auto;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.profile{
+    margin: 0 auto;
+
+    text-align:center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.imageProfile{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.buttom{
+    font-size: 1.4rem;
+    color:#000000;
+    font-weight: bold;
+    background-color: #015249;
+    border-radius: 5px;
+    padding: 2%
+
+}
+.buttom:hover{
+  background-color: #01352e;
+}
+
+#textoPrincipal{
+  font-size: 1.4rem;
+  text-align:center;
+}
+#subTexto{
+  font-size: 1.3rem;
+  text-align:center
+}

@@ -1,6 +1,30 @@
 @import "../reset.css";
 @import "../components/header.css";
 
+#google_translate_element {
+  display: none;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+#Flags{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-left: 50%;
+}
+
+body {
+  position: static !important;
+  top: 0 !important;
+}
+
+/*img {
+  max-width: 35px;
+} */
+
 .mainContainer{
   display: flex;
   align-items: center;
@@ -106,7 +130,7 @@ transform: scale(1.1);
 
 }
 .modal{
-background: #034040;
+background: var(--cor-principal-1);
 text-align: start;
 border-radius: 10px;
 width: 50%;
@@ -118,7 +142,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-color: #B8D8C0;
+color: var(--cor-principal-2);
 gap: 10px;
 
 }
