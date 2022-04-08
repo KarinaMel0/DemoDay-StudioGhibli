@@ -31,22 +31,32 @@ Temos também a página de personagens, para aqueles que querem saber um pouco m
 
 O site conta com responsividade, sendo possivel acessar do *Desktop*, *Mobile(425px)* ou *Tablet(767px)*
 
-Em Suma, Desejo que o projeto consiga ajudar muitos admiradores do Studio Ghibli.
+Implementamos recursos áudio visuais e alteramos as cores e contraste para proporcionar as pessoas com deficiência visual uma melhor experiência na utilização do produto.
+
+Em Suma, Desejamos que o projeto consiga ajudar muitos admiradores do Studio Ghibli.
 
 
 ---
 
 ## Usuário
 
-  ### Quem é o Usuário? :scroll:
+  ### Quem são os Usuários? :scroll:
 
-  O usuário alvo são fãs ou apenas simpatizantes do Studio Ghibli que querem saber mais detalhes de suas obras ou personagens.
+- Homens e mulheres a partir dos 18 anos. 
+- Crianças a partir dos 7 anos que já iniciaram a leitura e escrita e adolescentes;
+- Pessoas com deficiência visual;
+- Fãs e simpatizantes de animes e mangás;
+- Pessoas que gostam de histórias relacionadas a cultura japonesa;
+- Consome conteúdo de qualidade, criativo, ilustrações;
+- Gosta de assistir filmes de aventura e fantasia;
+
+### Proto Personas 🙋‍♀️🙋‍♂️
+
+<img width=600px src="https://cdn.discordapp.com/attachments/933855982071734322/961676165280591952/WhatsApp_Image_2022-04-07_at_14.08.56.jpeg" alt="Proto Personas">
 
 ### História de Usuário &#9998;
 
-<img width=600px src="https://cdn.discordapp.com/attachments/725539486951538750/955509464193171546/Frame_37_3.png" alt="Historia de usuario 1">
-<img width=600px src="https://cdn.discordapp.com/attachments/858579792914546708/955545750551547925/Frame_38_1.png" alt="Historia de usuario 2">
-<img width=600px src="https://cdn.discordapp.com/attachments/725539486951538750/955509695316131860/Frame_39.png" alt="Historia de usuario 3">
+<img width=600px src="https://cdn.discordapp.com/attachments/933855982071734322/961669827666268160/2SjJHokktHNYwBL89r1sAs.png" alt="Historia de usuario 1">
 
 ---
 ## Protótipo 
@@ -74,9 +84,19 @@ Em Suma, Desejo que o projeto consiga ajudar muitos admiradores do Studio Ghibli
 
 <img width=300px src="https://cdn.discordapp.com/attachments/725539486951538750/954427567950143508/Screenshot_44.png" alt="Desktop"> <img width=300px src="https://cdn.discordapp.com/attachments/725539486951538750/954427568226971708/Screenshot_45.png" alt="Desktop">
 
-### Paleta de cores utilizada
+### Paleta de cores com contraste
 
-<img width=500px src="https://cdn.discordapp.com/attachments/725539486951538750/954428170445144094/Screenshot_46.png" >
+Utilizamos as funcionalidades do adobe color para criar um melhor contraste e proporcionar uma melhor experiência no site para pessoas daltônicas.
+
+<img width=500px src="https://cdn.discordapp.com/attachments/933855982071734322/961676518466142269/AdobeColor-DemoDay_dalt.jpg" >
+<img width=500px src="https://cdn.discordapp.com/attachments/933855982071734322/961676518747168848/WhatsApp_Image_2022-04-05_at_20.56.31.jpeg" >
+
+### Recurso Áudio Visual
+
+Implementamos recurso áudio visual no nosso produto tornando possível escutar a descrição nos cards dos filmes.
+(Atenção, o áudio estará disponivel de acordo com o pacote de voz instalado no seu dispositivo.)
+
+(inserir o gif do video aqui)
 
 ---
 
@@ -132,7 +152,7 @@ Para saber mais detalhes sobre o Personagem, basta apenas selecionar a foto de q
 
 
 ---
-## Resultado Final &#9989;
+## Algumas demonstrações das funcionalidades:
 ##### Home
 <img width=600px alt="Resultado Final Home" src="https://media1.giphy.com/media/9hIJMuAPvi7w33xdan/giphy.gif?cid=790b761151e3beea00e02d0e0e10aa72af2fa6e1fb79b286&rid=giphy.gif&ct=g">
 
@@ -144,12 +164,48 @@ Para saber mais detalhes sobre o Personagem, basta apenas selecionar a foto de q
 
 ---
 
-## Sobre a desenvolvedora &#127803;
+## Sobre as desenvolvedoras &#127803;
+- Dayane Rodrigues
+>
+<a href="https://www.linkedin.com/in/dayane-rodrigues-979109204" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<br>
+<a href="https://www.linkedin.com/in/dayane-rodrigues-979109204" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<br>
+
+- Flavia Almeida
+>
+<a href="https://www.linkedin.com/in/karina-mel-611649223/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<br>
+<a href="https://www.linkedin.com/in/dayane-rodrigues-979109204" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<br>
+
+- Isabela Soares
+>
+<a href="https://www.linkedin.com/in/karina-mel-611649223/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<br>
+<a href="https://www.linkedin.com/in/dayane-rodrigues-979109204" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<br>
+
 - Karina Mel
 >
 <a href="https://www.linkedin.com/in/karina-mel-611649223/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <br>
+<a href="https://www.linkedin.com/in/dayane-rodrigues-979109204" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<br>
 
+- Louiza Lima
+>
+<a href="https://www.linkedin.com/in/karina-mel-611649223/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<br>
+<a href="https://www.linkedin.com/in/dayane-rodrigues-979109204" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<br>
+
+- Karina Mel
+>
+<a href="https://www.linkedin.com/in/natalie-silva-829b274a/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<br>
+<a href="https://www.linkedin.com/in/dayane-rodrigues-979109204" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<br>
 
 ---
 
