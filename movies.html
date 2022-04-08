@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta
       name="viewport"
@@ -7,7 +7,7 @@
     />
     <meta charset="utf-8" />
 
-    <title>Studio Ghibli</title>
+    <title>Ghibli Wiki</title>
     <link rel="stylesheet" href="./styles/pages/movies.css" />
     <link rel="icon" href="./assets/logo.svg" alt="logo" />
   </head>
@@ -16,49 +16,40 @@
       <header class="headerContainer">
         <a href="index.html">
           <picture class="logoContainer">
-            <img src="./assets/logo.svg" alt="logo" />
-
-            <h1 id="nameCreator"></h1>
+            <img src="assets/logo.svg" alt="logo" />
           </picture>
         </a>
         <nav>
           <ul class="navList" id="navList">
+
             <li class="listItem">
-              <img src="./assets/ant-design_home-filled.svg" alt="iconHome" />
-              <a href="index.html">Home</a>
+              <a href="index.html"><img src="./assets/ant-design_home-filled.svg" alt="icone de uma casinha"/><span>Home</span></a>
             </li>
+
             <li class="listItem">
-              <img
-                src="./assets/fluent_movies-and-tv-16-filled.svg"
-                alt="IconMovies"
-              />
-              <a href="./movies.html">Movies</a>
+              <a href="movies.html"><img src="./assets/fluent_movies-and-tv-16-filled.svg"
+                alt="Icone claquete"
+              /><span>Filmes</span></a>
             </li>
+
             <li class="listItem">
-              <img src="./assets/ph_mask-happy-fill.svg" alt="IconMovies" />
-              <a href="characters.html">Characters</a>
+              <a href="characters.html"><img src="./assets/ph_mask-happy-fill.svg" alt="Icone Mascara de teatro" /><span>Personagens</span></a>
             </li>
+
             <li class="listItem">
-              <img src="./assets/akar-icons_github-fill.svg" alt="IconMovies" />
-              <a href="https://github.com/KarinaMel0" target="_blank">GitHub</a>
+              <a href="about.html"><img src="./assets/noto-v1_woman-technologist.svg" alt="Icone emoji, mulher no computador" /><span>Sobre Nós</span></a>
             </li>
-            <li class="listItem">
-              <img
-                src="./assets/entypo-social_linkedin-with-circle.svg"
-                alt="IconMovies"
-              />
-              <a
-                href="https://www.linkedin.com/in/karina-mel-611649223/"
-                target="_blank"
-                >Linkedin</a
-              >
-            </li>
+
           </ul>
         </nav>
       </header>
-
       <main class="mainContainer" id="mainContainer">
 
+    <div id="google_translate_element" class="boxTradutor"></div>
+  <section id="Flags">
+    <a href="javascript:trocarIdioma('pt')"><img class="flag" alt="portugues" src="assets/bra.png"></a>
+    <a href="javascript:trocarIdioma('en')"><img class="flag" alt="ingles" src="assets/en.png"></a>
+  </section>
 
      <div class="modalContainer">
        <div class="modal">
@@ -67,17 +58,12 @@
        </div>
      </div>
 
-
-
-
-
-
         <div class="inputContainer">
           <input
             type="search"
             class="inputs"
             id="search"
-            placeholder="Search"
+            placeholder="Pesquisar por nome"
           />
 
 
@@ -89,10 +75,10 @@
           >
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
-            <option value="highestScore">Highest score</option>
-            <option value="lowestScore">Lowest score</option>
-            <option value="Newest">Newest</option>
-            <option value="Oldest">Oldest</option>
+            <option value="highestScore">Maior Pontuação</option>
+            <option value="lowestScore">Menor Pontuação</option>
+            <option value="Newest">Mais Recentes</option>
+            <option value="Oldest">Mais Antigos</option>
           </select>
 
           <select
@@ -101,7 +87,7 @@
             class="inputs"
             title="inputSelect"
           >
-            <option value="">Director</option>
+            <option value="">Diretor</option>
 
           </select>
 
@@ -111,7 +97,7 @@
           class="inputs"
           title="inputSelect"
         >
-          <option value="">Producer</option>
+          <option value="">Produtor</option>
 
         </select>
 
@@ -119,8 +105,42 @@
 
       </main>
     </div>
-
-
     <script src="./js/pages/movies.js" type="module"></script>
+
+    <script type="text/javascript">
+      let comboGoogleTradutor = null; //Varialvel global
+
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en,pt',
+          includedLanguages: 'en,pt',
+          layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+
+        comboGoogleTradutor = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+      }
+
+      function changeEvent(el) {
+        if (el.fireEvent) {
+          el.fireEvent('onchange');
+        } else {
+          let evObj = document.createEvent("HTMLEvents");
+
+          evObj.initEvent("change", false, true);
+          el.dispatchEvent(evObj);
+        }
+      }
+
+      function trocarIdioma(sigla) {
+        if (comboGoogleTradutor) {
+          comboGoogleTradutor.value = sigla;
+          changeEvent(comboGoogleTradutor);//Dispara a troca
+        }
+      }
+    </script>
+    <script type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
+
+

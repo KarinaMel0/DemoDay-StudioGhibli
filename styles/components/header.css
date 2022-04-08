@@ -1,6 +1,7 @@
 @import "../variables.css";
+
 body {
-  background-image: url(../../assets/Desktop.svg);
+  background-color: #D5FADE;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
@@ -8,6 +9,7 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+
 .headerContainer {
   background-color: var(--cor-principal-1);
   color: var(--cor-principal-2);
@@ -24,12 +26,21 @@ body {
   align-items: flex-start;
 }
 .headerContainer a {
-  padding-left: 10%;
+ transition:0.5s;
+ display: flex;
+ justify-content:center;
+ align-items:center;
 }
 .headerContainer:hover {
   width: 14rem;
+
 }
 .headerContainer:hover .navList a {
+  /* display: flex; */
+  padding-left: 10%;
+  transition: 0.5s;
+}
+.headerContainer:hover .navList span{
   display: flex;
 }
 .headerContainer .logoContainer {
@@ -44,7 +55,7 @@ body {
 }
 
 .logoContainer img {
-  height: 6vh;
+  height: 7vh;
 }
 
 .headerContainer a {
@@ -67,28 +78,26 @@ nav {
   align-items: flex-start;
   margin-right: 20px;
   z-index: 2;
-  padding-left: 10%;
+  padding-left: 5%;
   gap: 10px;
 }
-.navList a {
+.navList span{
   display: none;
+  align-items:center;
 }
 
 .listItem {
-  font-size: 4vmin;
+  font-size: 3vmin;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 3px;
+  gap:4rem;
   transition: 0.5s;
+  width: 12.87rem;
 }
 .listItem:hover {
   background: rgba(207, 223, 210, 0.47);
-  width: 11.87rem;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .menu {

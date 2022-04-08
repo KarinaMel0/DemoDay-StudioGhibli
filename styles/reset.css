@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+
 }

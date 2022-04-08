@@ -1,6 +1,47 @@
 @import "../reset.css";
 @import "../components/header.css";
 
+#google_translate_element {
+  display: none;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+#voiceList{
+  border: none;
+  border-radius: 10px;
+  height: 2.2rem;
+  background-color: #8fcfbc;
+  width: 200px;
+  font-size: 1.4rem;
+}
+#btnSpeak{
+  background-color: #48929d;
+  border: none;
+  border-radius: 10px;
+  height: 2.2rem;
+  cursor: pointer;
+  width: 200px;
+  font-size: 90%;
+  text-align: center;
+}
+
+#Flags{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-left: 50%;
+}
+
+body {
+  position: static !important;
+  top: 0 !important;
+}
+
+
+
 .mainContainer {
   min-height: 75vh;
   width: 100%;
@@ -9,6 +50,7 @@
   align-items: center;
   gap: 10px;
   position: relative;
+  margin-left: 3rem;
 
 }
 
@@ -81,7 +123,7 @@
 .titleWithinCard {
   position: relative;
   font-size: 1.7rem;
-  font-family: "Amatic SC", cursive;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
@@ -114,7 +156,7 @@
 
 }
 .modal{
-background: #034040;
+background: var(--cor-principal-1) ;
 text-align: start;
 border-radius: 10px;
 width: 50%;
@@ -126,7 +168,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-color: #B8D8C0;
+color: var(--cor-principal-2);
 gap: 10px;
 position:relative;
 }
@@ -155,7 +197,7 @@ position:relative;
 
 .modal  h3, .modal p{
 
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: start;
   align-self: start;
 
@@ -202,16 +244,12 @@ position:relative;
    margin-left: 1%;
   }
   .modal p{
-
-    font-size: 1.2rem;
-
-
-
+    font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
  .mainContainer{
-  margin-left: 5% ;
+  margin-left: 6%;
  }
   .cardsContainer {
     display: grid;
