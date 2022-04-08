@@ -115,13 +115,16 @@ function renderModal(infoFilme) {
   modal.innerHTML = `
   <img class="closeModal" src="./assets/Vector.png" alt="closeButton">
     <h1>${infoFilme.title}</h1>
-      <img class="poster" src="${infoFilme.poster}">
-        <p>Description: ${infoFilme.description}</p>
+    <img class="poster" src="${infoFilme.poster}">
 
-          <h3>Director:${infoFilme.director}</h3>
-          <h3>Producer: ${infoFilme.producer}</h3>
-          <h3>Release Date: ${infoFilme.release_date}</h3>
-          <h3> Score: ${infoFilme.rt_score}</h3>
+    <p id="txtinput">Description:${infoFilme.description}</p>
+    <h4>Ouça a Descrição</h4>
+    <select id="voiceList"></select>
+    <button id="btnSpeak" >Start/Pause the Description</button>
+    <h3>Director:${infoFilme.director}</h3>
+    <h3>Producer: ${infoFilme.producer}</h3>
+    <h3>Release Date: ${infoFilme.release_date}</h3>
+    <h3> Score: ${infoFilme.rt_score}</h3>
 
   `;
   const buttonCloseModal = document.querySelector(".closeModal");
@@ -131,4 +134,52 @@ function renderModal(infoFilme) {
   });
 
   modalContainer.classList.add("showModal");
+
+  // Voz no modal
+
+var txtinput = document.querySelector('#txtinput')
+var voiceList = document.querySelector('#voiceList')
+var btnspeak = document.querySelector('#btnSpeak')
+var synth = window.speechSynthesis;
+var voices = []
+
+Newvoices()
+if (speechSynthesis !== undefined) {
+  speechSynthesis.onvoiceschanged = Newvoices
+}
+
+btnspeak.addEventListener('click', () => {
+var tospeak = new SpeechSynthesisUtterance(txtinput.innerHTML)
+var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+voices.forEach((voice) => {
+if(voice.name === selectedVoiceName) {
+  tospeak.voice = voice
+}
+})
+
+if(synth.speaking){
+synth.cancel()
+}else{
+synth.speak(tospeak);
+}
+})
+
+function Newvoices () {
+voices = synth.getVoices()
+var selectedindex = voiceList.selectedindex < 0 ? 0 : voiceList.selectedindex
+voiceList.inneHTML = ''
+voices.forEach((voice) => {
+  var listItem = document.createElement('option')
+  listItem.textContent = voice.name
+  listItem.setAttribute('data-lang', voice.lang)
+  listItem.setAttribute('data-name', voice.name)
+  voiceList.appendChild(listItem)
+
+})
+
+voiceList.selectedindex = selectedindex
+
+
+}
+
 }
