@@ -1,5 +1,5 @@
 # Projeto Data Lovers - Desenvolvido no Bootcamp Laboratória
-## Studio Ghibli 
+## Studio Ghibli
 
 
 <img src="https://cdn.discordapp.com/attachments/725539486951538750/955512798241251348/Desktop_-_Movies_page_1.png">
@@ -15,7 +15,7 @@
 - [Como Utilizar?](#como-utilizar-gear)
 - [Tecnologias](#tecnologias-)
 - [Resultado Final](#resultado-final-)
-- [Desenvolvedora](#sobre-a-desenvolvedora-)
+- [Desenvolvedoras](#sobre-a-desenvolvedora-)
 
 ---
 
@@ -42,7 +42,7 @@ Em Suma, Desejamos que o projeto consiga ajudar muitos admiradores do Studio Ghi
 
   ### Quem são os Usuários? :scroll:
 
-- Homens e mulheres a partir dos 18 anos. 
+- Homens e mulheres a partir dos 18 anos.
 - Crianças a partir dos 7 anos que já iniciaram a leitura e escrita e adolescentes;
 - Pessoas com deficiência visual;
 - Fãs e simpatizantes de animes e mangás;
@@ -59,7 +59,7 @@ Em Suma, Desejamos que o projeto consiga ajudar muitos admiradores do Studio Ghi
 <img width=600px src="https://cdn.discordapp.com/attachments/933855982071734322/961669827666268160/2SjJHokktHNYwBL89r1sAs.png" alt="Historia de usuario 1">
 
 ---
-## Protótipo 
+## Protótipo
 
 ##### Protótipo de baixa fidelidade
 ##### Home
@@ -222,5 +222,3 @@ Para saber mais detalhes sobre o Personagem, basta apenas selecionar a foto de q
 
 
 ---
-
-
