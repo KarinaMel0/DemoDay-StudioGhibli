@@ -96,7 +96,7 @@ Utilizamos as funcionalidades do adobe color para criar um melhor contraste e pr
 Implementamos recurso áudio visual no nosso produto tornando possível escutar a descrição nos cards dos filmes.
 (Atenção, o áudio estará disponivel de acordo com o pacote de voz instalado no seu dispositivo.)
 
-(inserir o gif do video aqui)
+<img width=500px src="https://cdn.discordapp.com/attachments/951913651059716138/979755368718671932/ezgif-3-a8e83ef795.gif" >
 
 ---
 
